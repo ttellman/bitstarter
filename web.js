@@ -5,7 +5,8 @@ var homepage = fs.readfileSync('index.html', 'utf-8');
 
 app.get('/', function(request, response) {
 
-   response.send(homepage)
+   response.send(homepage.toString('utf8');
+
 });
 
 var port = process.env.PORT || 5000;
