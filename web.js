@@ -6,7 +6,7 @@ var homepage = fs.readFileSync('index.html', 'utf-8');
 
 app.get('/', function(request, response) {
 
-   response.send(homepage.toString('utf-8');
+   response.send(homepage.toString('utf-8'));
 
 });
 
