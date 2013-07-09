@@ -1,10 +1,12 @@
 var express = require('express');
 
 var app = express.createServer(express.logger());
+var homepage = fs.readfileSync('index.html', 'utf-8');
 
 app.get('/', function(request, response) {
-var homepage = fs.readFileSync('index.html', 'utf-8');
-   response.send(homepage);
+
+   response.send(homepage)
+});
 
 var port = process.env.PORT || 5000;
 app.listen(port, function() {
