@@ -71,4 +71,4 @@ if(require.main == module) {
         var outJson = JSON.stringify(checkJson, null, 4);
         console.log(outJson);
     }
-}
+};
